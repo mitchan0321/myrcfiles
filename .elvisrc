@@ -1,0 +1,4 @@
+set kfilecode="euc"
+set kdisplaycode="euc"
+set kinputcode="euc"
+set ksyscode="euc"

@@ -1,0 +1,10 @@
+$LIB_PATH << [$ENV,"HOME" . "/toy/lib"];
+defvar PROMPT "* ";
+
+if {defvar? INTERACTIVE}
+then: {
+    println "*** My name is " $ENV,"USERNAME" ".";
+    trap SIGINT {throw ReceiveSignal "Receive SIGINT"};
+    interp;
+    trap SIGINT;
+};

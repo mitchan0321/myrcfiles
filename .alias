@@ -1,0 +1,9 @@
+alias	a	alias
+##a	ls	"~/bin/ls -FCgk \!*"
+a	cp	"cp -i \!*"
+a	rm	"/bin/rm -i \!*"
+a	h	history
+#a	less	jless
+##a	more	jless
+##a	xemacs	"env XMODIFIERS=@im=none xemacs \!*"
+
