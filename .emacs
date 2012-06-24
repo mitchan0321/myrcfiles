@@ -186,23 +186,23 @@
 
 (if window-system (progn
 
-  ;; ʸ���ο������ꤷ�ޤ���
+  ;; Ê¸»ú¤Î¿§¤òÀßÄê¤·¤Þ¤¹¡£
   (add-to-list 'default-frame-alist '(foreground-color . "white"))
-  ;; �طʿ������ꤷ�ޤ���
+  ;; ÇØ·Ê¿§¤òÀßÄê¤·¤Þ¤¹¡£
   (add-to-list 'default-frame-alist '(background-color . "DarkSlateGray"))
-  ;; ��������ο������ꤷ�ޤ���
+  ;; ¥«¡¼¥½¥ë¤Î¿§¤òÀßÄê¤·¤Þ¤¹¡£
   (add-to-list 'default-frame-alist '(cursor-color . "SlateBlue2"))
-  ;; �ޥ����ݥ��󥿤ο������ꤷ�ޤ���
+  ;; ¥Þ¥¦¥¹¥Ý¥¤¥ó¥¿¤Î¿§¤òÀßÄê¤·¤Þ¤¹¡£
   (add-to-list 'default-frame-alist '(mouse-color . "SlateBlue2"))
-  ;; �⡼�ɥ饤���ʸ���ο������ꤷ�ޤ���
+  ;; ¥â¡¼¥É¥é¥¤¥ó¤ÎÊ¸»ú¤Î¿§¤òÀßÄê¤·¤Þ¤¹¡£
   (set-face-foreground 'modeline "white")
-  ;; �⡼�ɥ饤����طʿ������ꤷ�ޤ���
+  ;; ¥â¡¼¥É¥é¥¤¥ó¤ÎÇØ·Ê¿§¤òÀßÄê¤·¤Þ¤¹¡£
   (set-face-background 'modeline "MediumPurple2")
-  ;; ������Υ꡼�����ο������ꤷ�ޤ���
+  ;; ÁªÂòÃæ¤Î¥ê¡¼¥¸¥ç¥ó¤Î¿§¤òÀßÄê¤·¤Þ¤¹¡£
   (set-face-background 'region "LightSteelBlue1")
-  ;; �⡼�ɥ饤��ʥ����ƥ��֤Ǥʤ��Хåե��ˤ�ʸ���������ꤷ�ޤ���
+  ;; ¥â¡¼¥É¥é¥¤¥ó¡Ê¥¢¥¯¥Æ¥£¥Ö¤Ç¤Ê¤¤¥Ð¥Ã¥Õ¥¡¡Ë¤ÎÊ¸»ú¿§¤òÀßÄê¤·¤Þ¤¹¡£
   (set-face-foreground 'mode-line-inactive "gray30")
-  ;; �⡼�ɥ饤��ʥ����ƥ��֤Ǥʤ��Хåե��ˤ��طʿ������ꤷ�ޤ���
+  ;; ¥â¡¼¥É¥é¥¤¥ó¡Ê¥¢¥¯¥Æ¥£¥Ö¤Ç¤Ê¤¤¥Ð¥Ã¥Õ¥¡¡Ë¤ÎÇØ·Ê¿§¤òÀßÄê¤·¤Þ¤¹¡£
   (set-face-background 'mode-line-inactive "gray85")
 
 ))
@@ -266,3 +266,17 @@
       (append '(("\\.java$" . java-mode))
 	      auto-mode-alist))
 (tool-bar-mode 0)
+(custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(current-language-environment "UTF-8")
+ '(display-time-mode t)
+ '(tool-bar-mode nil))
+(custom-set-faces
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(default ((t (:inherit nil :stipple nil :background "DarkSlateGray" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "unknown" :family "Takaoゴシック")))))
