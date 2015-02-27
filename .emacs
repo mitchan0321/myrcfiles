@@ -99,20 +99,24 @@
       (append '(("\\.java$" . java-mode))
 	      auto-mode-alist))
 
+(setq auto-mode-alist
+      (append '(("\\.prfm$" . java-mode))
+	      auto-mode-alist))
+
 (set-language-environment "Japanese")
 (setq default-input-method "japanese-anthy")
 (global-set-key [\C-\ ] 'toggle-input-method)
 
-(setq auto-mode-alist
-      (append '(("\\.tcl$" . tcl-mode))
-	      auto-mode-alist))
-(setq auto-mode-alist
-      (append '(("\\.base$" . tcl-mode))
-	      auto-mode-alist))
-(setq auto-mode-alist
-      (append '(("\\.in$" . tcl-mode))
-	      auto-mode-alist))
-(autoload 'tcl-mode "tcl-mode.elc" "" t)
+;;(setq auto-mode-alist
+;;      (append '(("\\.tcl$" . tcl-mode))
+;;	      auto-mode-alist))
+;;(setq auto-mode-alist
+;;      (append '(("\\.base$" . tcl-mode))
+;;	      auto-mode-alist))
+;;(setq auto-mode-alist
+;;      (append '(("\\.in$" . tcl-mode))
+;;	      auto-mode-alist))
+;;(autoload 'tcl-mode "tcl-mode.elc" "" t)
 
 ;;  Xcal Mode
 (autoload 'xcal "~/lisp/xcal-19"
@@ -195,9 +199,9 @@
   ;; ¥Þ¥¦¥¹¥Ý¥¤¥ó¥¿¤Î¿§¤òÀßÄê¤·¤Þ¤¹¡£
   (add-to-list 'default-frame-alist '(mouse-color . "SlateBlue2"))
   ;; ¥â¡¼¥É¥é¥¤¥ó¤ÎÊ¸»ú¤Î¿§¤òÀßÄê¤·¤Þ¤¹¡£
-  (set-face-foreground 'modeline "white")
+;;  (set-face-foreground 'modeline "white")
   ;; ¥â¡¼¥É¥é¥¤¥ó¤ÎÇØ·Ê¿§¤òÀßÄê¤·¤Þ¤¹¡£
-  (set-face-background 'modeline "MediumPurple2")
+;;  (set-face-background 'modeline "MediumPurple2")
   ;; ÁªÂòÃæ¤Î¥ê¡¼¥¸¥ç¥ó¤Î¿§¤òÀßÄê¤·¤Þ¤¹¡£
   (set-face-background 'region "LightSteelBlue1")
   ;; ¥â¡¼¥É¥é¥¤¥ó¡Ê¥¢¥¯¥Æ¥£¥Ö¤Ç¤Ê¤¤¥Ð¥Ã¥Õ¥¡¡Ë¤ÎÊ¸»ú¿§¤òÀßÄê¤·¤Þ¤¹¡£
