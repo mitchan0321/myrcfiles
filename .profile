@@ -2,7 +2,7 @@
 #
 PATH=/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin
 export PATH
-TERM=cons25
+TERM=xterm
 export TERM
 
 
