@@ -1,6 +1,6 @@
 #	$Id: .profile,v 1.1.1.1 2009/02/09 12:00:08 mit-sato Exp $
 #
-PATH=/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin
+PATH=/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin:/usr/local/sbin
 export PATH
 TERM=xterm
 export TERM
