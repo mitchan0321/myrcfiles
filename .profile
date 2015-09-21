@@ -35,3 +35,14 @@ export TERM
 # 	*) PS1="${PS1}$ ";;
 # esac
 
+export LANG=ja_JP.eucJP
+export LC_CTYPE=ja_JP.eucJP
+
+alias vi='vim'
+alias view='vim -R'
+alias jman='env LC_CTYPE=ja_JP.eucJP jman'
+
+export EDITOR='vim'
+export PAGER='jless'
+export LV='-Ou8'
+###export LIBPTHREAD_BIGSTACK_MAIN=t

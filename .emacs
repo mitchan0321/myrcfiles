@@ -104,8 +104,9 @@
 	      auto-mode-alist))
 
 (set-language-environment "Japanese")
-(setq default-input-method "japanese-anthy")
-(global-set-key [\C-\ ] 'toggle-input-method)
+(prefer-coding-system 'euc-jp)
+;;(setq default-input-method "japanese-anthy")
+;;(global-set-key [\C-\ ] 'toggle-input-method)
 
 ;;(setq auto-mode-alist
 ;;      (append '(("\\.tcl$" . tcl-mode))
