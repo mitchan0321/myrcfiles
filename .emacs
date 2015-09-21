@@ -190,29 +190,17 @@
 ;; nil t)
 
 (if window-system (progn
-
-  ;; Ê¸»ú¤Î¿§¤òÀßÄê¤·¤Þ¤¹¡£
   (add-to-list 'default-frame-alist '(foreground-color . "white"))
-  ;; ÇØ·Ê¿§¤òÀßÄê¤·¤Þ¤¹¡£
   (add-to-list 'default-frame-alist '(background-color . "DarkSlateGray"))
-  ;; ¥«¡¼¥½¥ë¤Î¿§¤òÀßÄê¤·¤Þ¤¹¡£
   (add-to-list 'default-frame-alist '(cursor-color . "SlateBlue2"))
-  ;; ¥Þ¥¦¥¹¥Ý¥¤¥ó¥¿¤Î¿§¤òÀßÄê¤·¤Þ¤¹¡£
   (add-to-list 'default-frame-alist '(mouse-color . "SlateBlue2"))
-  ;; ¥â¡¼¥É¥é¥¤¥ó¤ÎÊ¸»ú¤Î¿§¤òÀßÄê¤·¤Þ¤¹¡£
 ;;  (set-face-foreground 'modeline "white")
-  ;; ¥â¡¼¥É¥é¥¤¥ó¤ÎÇØ·Ê¿§¤òÀßÄê¤·¤Þ¤¹¡£
 ;;  (set-face-background 'modeline "MediumPurple2")
-  ;; ÁªÂòÃæ¤Î¥ê¡¼¥¸¥ç¥ó¤Î¿§¤òÀßÄê¤·¤Þ¤¹¡£
   (set-face-background 'region "LightSteelBlue1")
-  ;; ¥â¡¼¥É¥é¥¤¥ó¡Ê¥¢¥¯¥Æ¥£¥Ö¤Ç¤Ê¤¤¥Ð¥Ã¥Õ¥¡¡Ë¤ÎÊ¸»ú¿§¤òÀßÄê¤·¤Þ¤¹¡£
   (set-face-foreground 'mode-line-inactive "gray30")
-  ;; ¥â¡¼¥É¥é¥¤¥ó¡Ê¥¢¥¯¥Æ¥£¥Ö¤Ç¤Ê¤¤¥Ð¥Ã¥Õ¥¡¡Ë¤ÎÇØ·Ê¿§¤òÀßÄê¤·¤Þ¤¹¡£
   (set-face-background 'mode-line-inactive "gray85")
-
 ))
 (if (not window-system) (progn
-
   (add-to-list 'default-frame-alist '(background-color . "black"))
 ))
 
