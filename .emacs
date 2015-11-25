@@ -31,6 +31,8 @@
 					       "on"
 					       "off")))
 (global-set-key "\et" 'toggle-truncate-lines)
+(global-set-key [f5] 'next-error)
+(global-set-key [f6] 'previous-error)
 
 ;;; for Time
 (setq display-time-day-and-date t)
