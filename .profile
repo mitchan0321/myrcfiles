@@ -1,6 +1,6 @@
 #	$Id: .profile,v 1.1.1.1 2009/02/09 12:00:08 mit-sato Exp $
 #
-PATH=/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin:/usr/local/sbin
+PATH=/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin
 export PATH
 TERM=xterm
 export TERM
@@ -35,8 +35,12 @@ export TERM
 # 	*) PS1="${PS1}$ ";;
 # esac
 
-export LANG=ja_JP.eucJP
-export LC_CTYPE=ja_JP.eucJP
+export LANG=ja_JP.UTF-8
+export LC_CTYPE=ja_JP.UTF-8
+#export LANG=ja_JP.eucJP
+#export LC_CTYPE=ja_JP.eucJP
+#export LANG=C
+#export LC_CTYPE=C
 
 alias vi='vim'
 alias view='vim -R'
@@ -45,4 +49,6 @@ alias jman='env LC_CTYPE=ja_JP.eucJP jman'
 export EDITOR='vim'
 export PAGER='jless'
 export LV='-Ou8'
+export LESSCHARSET=utf-8
+export JLESSCHARSET=ujis
 ###export LIBPTHREAD_BIGSTACK_MAIN=t

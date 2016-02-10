@@ -106,7 +106,7 @@
 	      auto-mode-alist))
 
 (set-language-environment "Japanese")
-(prefer-coding-system 'euc-jp)
+(prefer-coding-system 'utf-8)
 ;;(setq default-input-method "japanese-anthy")
 ;;(global-set-key [\C-\ ] 'toggle-input-method)
 
