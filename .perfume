@@ -1,0 +1,11 @@
+defvar PROMPT "* ";
+$LIB_PATH << [$ENV,"HOME" . "/perfume/test"];
+$LIB_PATH << [$ENV,"HOME" . "/perfume/lib"];
+
+if {defvar? INTERACTIVE}
+then: {
+    trap SIGINT {throw ReceiveSignal "Receive SIGINT"};
+    interp;
+    trap SIGINT;
+};
+
