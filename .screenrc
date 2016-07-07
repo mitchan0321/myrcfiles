@@ -1,2 +1,21 @@
+defutf8 on
 defencoding UTF-8
+encoding UTF-8 UTF-8
+
 escape ^|^|
+
+zombi kr # k: destroy window, r: resurrect window
+
+autodetach on
+verbose on
+nethack on
+vbell on
+
+#hardstatus alwayslastline '%m/%d %02c:%s %{= .g}%H%{-} %L=%-w%45L>%{=u g.}%n %t%{-}%+w %-17<%=%{= .y}(%l)'
+#hardstatus alwayslastline '%{= kw}%Y/%m/%d %02c:%s %{= .y}%H %L=%{= .b}%-w%46>%{= .r}%n %t*%{= .b}%+w%-16=%{= .y}[%l]'
+hardstatus alwayslastline '%{= ck}%H%{= wk} %m/%d(%D) %02c:%s %{= yk}%L=%{= .b}%-w%46>%{= .r}%n %t*%{= .b}%+w%-14=%{= gm}%l'
+
+# For display last command in window list
+# with .bashrc PS1 setting.
+# ex) export PS1='\033k\033\\[\u@\h \W]\$ '
+shelltitle "$ |bash"

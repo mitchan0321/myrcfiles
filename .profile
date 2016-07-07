@@ -52,3 +52,4 @@ export LV='-Ou8'
 export LESSCHARSET=utf-8
 export JLESSCHARSET=ujis
 ###export LIBPTHREAD_BIGSTACK_MAIN=t
+export PS1='\033k\033\\[\u@\h \W]\$ '

@@ -13,3 +13,5 @@ export EDITOR='vim'
 export PAGER='jless'
 export LV='-Ou8'
 ###export LIBPTHREAD_BIGSTACK_MAIN=t
+
+export PS1='\033k\033\\[\u@\h \W]\$ '
