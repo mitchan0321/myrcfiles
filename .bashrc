@@ -14,4 +14,9 @@ export PAGER='jless'
 export LV='-Ou8'
 ###export LIBPTHREAD_BIGSTACK_MAIN=t
 
-export PS1='\033k\033\\[\u@\h \W]\$ '
+if [ "$EMACS" == "t" ]
+then
+    export PS1='[\u@\h \W]\$ '
+else
+    export PS1='\033k\033\\[\u@\h \W]\$ '
+fi
