@@ -16,12 +16,12 @@
 (setq auto-save-default t)
 (setq auto-save-interval 1000)
 
-(global-set-key "\C-h"     'delete-backward-char)
+(global-set-key "\C-h"       'delete-backward-char)
 (global-set-key "\C-Z"       'scroll-down)
 (global-set-key "\eh"        'help-for-help)
 (global-set-key "\e "        'set-mark-command)
 (global-set-key "\C-t"       'execute-extended-command)
-(global-set-key "\C-xj"   'goto-line)
+(global-set-key "\C-xj"      'goto-line)
 (defun toggle-truncate-lines()
   "Toggle truncate line mode."
   (interactive)
@@ -33,6 +33,7 @@
 (global-set-key "\et" 'toggle-truncate-lines)
 (global-set-key [f5] 'next-error)
 (global-set-key [f6] 'previous-error)
+;;;(global-set-key "\C-u" 'undo)
 
 ;;; for Time
 (setq display-time-day-and-date t)
@@ -196,14 +197,14 @@
   (add-to-list 'default-frame-alist '(background-color . "DarkSlateGray"))
   (add-to-list 'default-frame-alist '(cursor-color . "SlateBlue2"))
   (add-to-list 'default-frame-alist '(mouse-color . "SlateBlue2"))
-;;  (set-face-foreground 'modeline "white")
-;;  (set-face-background 'modeline "MediumPurple2")
+  (set-face-foreground 'modeline "white")
+  (set-face-background 'modeline "MediumPurple2")
   (set-face-background 'region "LightSteelBlue1")
   (set-face-foreground 'mode-line-inactive "gray30")
   (set-face-background 'mode-line-inactive "gray85")
 ))
 (if (not window-system) (progn
-  (add-to-list 'default-frame-alist '(background-color . "black"))
+ (add-to-list 'default-frame-alist '(background-color . "black"))
 ))
 
 ;;; file loads
@@ -279,3 +280,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :background "DarkSlateGray" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 113 :width normal :foundry "unknown" :family "DejaVu Sans Mono")))))
+(load-theme 'manoj-dark t)
