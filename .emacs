@@ -265,7 +265,7 @@
 (setq auto-mode-alist
       (append '(("\\.java$" . java-mode))
 	      auto-mode-alist))
-(tool-bar-mode 0)
+;;;(tool-bar-mode 0)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -273,7 +273,8 @@
  ;; If there is more than one, they won't work right.
  '(current-language-environment "UTF-8")
  '(display-time-mode t)
- '(tool-bar-mode nil))
+;;; '(tool-bar-mode nil)
+)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

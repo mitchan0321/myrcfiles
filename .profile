@@ -4,7 +4,8 @@ PATH=/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin
 export PATH
 TERM=xterm
 export TERM
-
+LD_LIBRARY_PATH=/lib:/usr/lib/:/usr/local/lib
+export LD_LIBRARY_PATH
 
 # Uncomment next line to enable the builtin emacs(1) command line editor
 # in sh(1), e.g. C-a -> beginning-of-line.
