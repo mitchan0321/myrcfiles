@@ -43,15 +43,15 @@ export LC_CTYPE=ja_JP.UTF-8
 #export LANG=C
 #export LC_CTYPE=C
 
-alias vi='vim'
-alias view='vim -R'
-alias jman='env LC_CTYPE=ja_JP.eucJP jman'
+#alias vi='vim'
+#alias view='vim -R'
+#alias jman='env LC_CTYPE=ja_JP.eucJP jman'
 
-export EDITOR='vim'
-export PAGER='jless'
-export LV='-Ou8'
-export LESSCHARSET=utf-8
-export JLESSCHARSET=ujis
+export EDITOR='vi'
+#export PAGER='jless'
+#export LV='-Ou8'
+#export LESSCHARSET=utf-8
+#export JLESSCHARSET=ujis
 ###export LIBPTHREAD_BIGSTACK_MAIN=t
 
 if [ "$EMACS" == "t" ]
