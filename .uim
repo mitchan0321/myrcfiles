@@ -1,0 +1,5 @@
+(define default-im-name 'mozc)  
+(define-key generic-on-key? '("<Control>]"))  
+(define-key generic-off-key? '("<Control>]"))  
+(define-key mozc-kana-toggle-key? '("<IgnoreCase><Control>J"))
+;;; (define skk-dic-file-name (string-append (getenv "HOME") "/.skk/SKK-JISYO.L"))
